@@ -1,0 +1,30 @@
+- config:
+    - testset: "Basic tests"
+    - timeout: 100  # Increase timeout from the default 10 seconds
+
+- test: # create entity by PUT
+    - name: "Testing POST"
+    - url: "/prod/urls"
+    - method: "POST"
+    - body: '{"URLS": "www.google.com"}'
+    - headers: {'Content-Type': 'application/json'}
+
+- test: # create entity by PUT
+    - name: "Testing get"
+    - url: "/prod/urls"
+    - method: "GET"
+    - headers: {'Content-Type': 'application/json'}
+
+- test: # create entity by PUT
+    - name: "Testing Delete"
+    - url: "/prod/urls" 
+    - method: "DELETE"
+    - body: '{"URLS": "www.google.com"}'
+    - headers: {'Content-Type': 'application/json'}
+
+- test: # create entity by PUT
+    - name: "Testing Patch"
+    - url: "/prod/urls"
+    - method: "PATCH"
+    - body: '"www.google.com", "www.yahoo.com"'
+    - headers: {'Content-Type': 'application/json'}

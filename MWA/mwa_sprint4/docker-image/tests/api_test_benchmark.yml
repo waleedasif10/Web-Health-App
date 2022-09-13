@@ -1,0 +1,8 @@
+- benchmark: # create entity
+    - name: "Basic get"
+    - url: "/prod/urls"
+    - warmup_runs: 2
+    - 'benchmark_runs': '10'
+    - metrics:
+        - total_time
+        - total_time: mean

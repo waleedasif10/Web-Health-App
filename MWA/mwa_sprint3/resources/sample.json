@@ -1,0 +1,57 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:us-east-1:315997497220:MwaSprint2Stack-AlarmNotificationB0D2F5CA-Q5P1EQST1TWR:41235c92-49e4-4667-bcda-627e236477fa",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "fcb798d8-9d91-574f-960c-c3f616092a6b",
+                "TopicArn": "arn:aws:sns:us-east-1:315997497220:MwaSprint2Stack-AlarmNotificationB0D2F5CA-Q5P1EQST1TWR",
+                "Subject": "ALARM: \"MwaSprint2Stack-LatencyAlarmnustedupk2247C220-76UJQFG2GVLT\" in US East (N. Virginia)",
+                "Message": {
+                    "AlarmName": "MwaSprint2Stack-LatencyAlarmnustedupk2247C220-76UJQFG2GVLT",
+                    "AlarmDescription": null,
+                    "AWSAccountId": "315997497220",
+                    "AlarmConfigurationUpdatedTimestamp": "2022-06-23T15: 18: 21.536+0000",
+                    "NewStateValue": "ALARM",
+                    "NewStateReason": "Threshold Crossed: 1 datapoint [0.597589 (23/06/22 15: 39: 00)] was greater than the threshold (0.2).",
+                    "StateChangeTime": "2022-06-23T15: 40: 08.807+0000",
+                    "Region": "US East (N. Virginia)",
+                    "AlarmArn": "arn:aws:cloudwatch:us-east-1: 315997497220:alarm:MwaSprint2Stack-LatencyAlarmnustedupk2247C220-76UJQFG2GVLT",
+                    "OldStateValue": "OK",
+                    "OKActions": [],
+                    "AlarmActions": [
+                        "arn:aws:sns:us-east-1: 315997497220:MwaSprint2Stack-AlarmNotificationB0D2F5CA-Q5P1EQST1TWR"
+                    ],
+                    "InsufficientDataActions": [],
+                    "Trigger": {
+                        "MetricName": "url_latency",
+                        "Namespace": "MwaSprint2training",
+                        "StatisticType": "Statistic",
+                        "Statistic": "AVERAGE",
+                        "Unit": null,
+                        "Dimensions": [
+                            {
+                                "value": "nust.edu.pk",
+                                "name": "URL"
+                            }
+                        ],
+                        "Period": 60,
+                        "EvaluationPeriods": 1,
+                        "ComparisonOperator": "GreaterThanThreshold",
+                        "Threshold": 0.2,
+                        "TreatMissingData": "",
+                        "EvaluateLowSampleCountPercentile": ""
+                    }
+                },
+                "Timestamp": "2022-06-23T15:40:08.859Z",
+                "SignatureVersion": "1",
+                "Signature": "WFmBoQ2xFKQr6fHp3iHUcEZLxLATF8kWKJ+WE7RIRvPLe5JQwbgKMxweRmTFLsDKtTzN8BR2Cdj9Cjt8/E26ko4ZjZgQBMo8Ned0PQXJZO4Rv4aN9wjT+QZWg2JKJTFliYpcxrSITOVFZf0aqo+wwiBxRZvU9cE6slBnInKn/TpIEJKddesOAIdba1Ox3uD2O202JxQtGOK+hoJ50njfIhvrj3DfgE9POFa6F1Wh6gGytw57LKHfOI7zTFgwYTkinWFtXaRsNizoYqJftBxGyenuo4rHt8X1USiVsDgvX1AMqmzAKVwlDF1I7W6dU0hkhyEb4K5TvAekE3hpV/JPTA==",
+                "SigningCertUrl": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-7ff5318490ec183fbaddaa2a969abfda.pem",
+                "UnsubscribeUrl": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:315997497220:MwaSprint2Stack-AlarmNotificationB0D2F5CA-Q5P1EQST1TWR:41235c92-49e4-4667-bcda-627e236477fa",
+                "MessageAttributes": {}
+            }
+        }
+    ]
+}
